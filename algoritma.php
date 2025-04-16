@@ -110,12 +110,42 @@ $m1 = ($rules['lambat'] * pow($lambatZ, 2) / 2) - ($rules['lambat'] * pow(0, 2) 
 $m2 = 0;
 $m3 = ($rules['cepat'] * pow(1200, 2) / 2) - ($rules['cepat'] * pow($cepatZ, 2) / 2);
 
+$a1 = $rules['lambat'] * ($lambatZ - 0);
+$a2 = 0;
+$a3 = $rules['cepat'] * (1200 - $cepatZ);
+
 echo $m1 . "<br>";
 echo $m2 . "<br>";
 echo $m3 . "<br>";
 
+echo $a1 . "<br>";
+echo $a2 . "<br>";
+echo $a3 . "<br>";
 
+// defuzzifikasi
+$defuzzifikasi = ($m1 + $m2 + $m3) / ($a1 + $a2 + $a3);
 
+echo $defuzzifikasi . "<br>";
+
+// // Batas bawah dan atas
+// $lower = 640;
+// $upper = 1025;
+
+// // Koefisien fungsi
+// $a = 0.0014;
+// $b = -0.7143;
+
+// // Fungsi integral tak tentu: (a/2)*z^2 + b*z
+// function definite_integral($a, $b, $lower, $upper)
+// {
+//     $F_upper = ($a / 2) * pow($upper, 2) + $b * $upper;
+//     $F_lower = ($a / 2) * pow($lower, 2) + $b * $lower;
+//     return $F_upper - $F_lower;
+// }
+
+// $result = definite_integral($a, $b, $lower, $upper);
+
+// echo "Hasil integral: " . number_format($result, 3, ',', '.');
 
 
 
