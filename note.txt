@@ -314,4 +314,29 @@ echo "<pre>";
 // output :
 // berapa kecepatan putaran mesin dalam rpm
 
-// https://www.youtube.com/watch?v=qXv984DFxZ8
+real case
+
+kritera :
+- curah hujan
+- ph tanah
+- umur tanaman
+
+sub kritera :
+* curah hujan
+- rendah (< 50)
+- sedang (50-150)
+- tinggi (> 150)
+
+* ph tanah
+- asam (< 5.5)
+- netral (5.5-7)
+- basa (> 7)
+
+* umur tanaman
+- mudah (< 3)
+- sedang (3-6)
+- tua (> 6)
+
+https://www.youtube.com/watch?v=qXv984DFxZ8
+https://www.youtube.com/watch?v=2ucYrO_yyFg
+https://www.youtube.com/watch?v=fKueNI4kY6A&t
